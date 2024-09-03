@@ -70,5 +70,5 @@ Este projeto está licenciado sob a licença ISC. Consulte o arquivo LICENSE par
 
 Para mais informações, entre em contato com:
 <br />
-Email: [Leonardo Bernardo](mailto:leonardo.bernardo2658@gmail.com).
-LinkedIn: [Leonardobern](https://www.linkedin.com/in/leonardo-bern/).
+- Email: [Leonardo Bernardo](mailto:leonardo.bernardo2658@gmail.com).
+- LinkedIn: [Leonardobern](https://www.linkedin.com/in/leonardo-bern/).
