@@ -1,81 +1,74 @@
-<div align="center">
+# Fórmula 1 API
 
-  <img src="./.github/assets/blue-saiyan-bg.png" alt="Logo" height="200">
-  <h1 align="center"><strong>NODE BOILERPLATE - BLUE EDITION</strong></h1>
-  <p align="center">
-	  Don't start a new Node project from zero!<br> Use this simple <b>Nodejs</b> boilerplate with pre-configured <b>Typescript</b> in a modern way.
-  </p>
+Este projeto é uma API desenvolvida com Fastify e TypeScript, que fornece informações sobre equipes e pilotos de Fórmula 1. A API é capaz de listar todos os times e pilotos, bem como detalhes específicos sobre cada piloto.
 
-</div>
+## Funcionalidades
 
-<br />
+- **Listagem de equipes**: Retorna informações sobre as equipes de Fórmula 1, incluindo nome e localização.
+- **Listagem de pilotos**: Fornece uma lista de pilotos e suas respectivas equipes.
+- **Consulta individual de pilotos**: Permite buscar informações detalhadas de um piloto específico através de seu ID.
 
-  <!-- Badges -->
-<div align="center">
-  
-  [![TypeScript version][ts-badge]][typescript-5-4]
-  [![Node.js version][nodejs-badge]][nodejs]
+## Tecnologias Utilizadas
 
-</div>
+- **Node.js**: Ambiente de execução para JavaScript no servidor.
+- **Fastify**: Framework web de alta performance.
+- **TypeScript**: Superconjunto de JavaScript que adiciona tipagem estática.
+- **CORS**: Configuração de segurança para permitir acessos de diferentes origens.
 
-# 🚀 Technologies
+## Instalação
 
-This code source was developed with the following items:
+Para instalar e rodar o projeto localmente, siga os passos abaixo:
 
-### 📦 Dependencies
+1. Clone o repositório:
+   ```bash
+   git clone https://github.com/seu-usuario/projeto-formula1.git
+   ```
 
-- [typescript][typescript-npm] - Superset for application scale JavaScript development
-- [tsx][tsx-npm] - TypeScript Execute (tsx): Enable Node.js to run TypeScript
-- [tsup][tsup-npm] - Bundle your TypeScript library with no config, powered by esbuild
-- [@types/node][@types/node-npm] - type definitions for node
+2. Navegue até o diretório do projeto:
+   ```bash
+   cd projeto-formula1
+   ```
 
-### 📄 Files
+3. Instale as dependências:
+   ```bash
+   npm install
+   ```
 
-- `.gitignore` - Ignore folders like node_modules
-- `.env` - Enviroment variables
-- `tsconfig.json` - Typescript configure Options
+4. Inicie o servidor em modo de desenvolvimento:
+   ```bash
+   npm run start:dev
+   ```
 
-### ⚡ Scripts
+## Uso
 
-- `npm run dist`: Compiles TypeScript files to JavaScript in the dist directory.
-- `npm run start:dev`: Runs the server in development mode with environment variables loaded from the .env file.
-- `npm run start:watch`: Runs the server in development mode with support for automatic reload on file changes.
-- `npm run start:dist`: Compiles the project and runs the compiled version from the dist directory.
+Após iniciar o servidor, você pode acessar as rotas disponíveis:
 
-# 👨‍💻 How To Use
+- `GET /teams` - Lista todas as equipes de Fórmula 1.
+- `GET /drivers` - Lista todos os pilotos de Fórmula 1.
+- `GET /drivers/:id` - Retorna informações detalhadas de um piloto específico pelo ID.
 
-click in **[Use this template]** OR
+## Estrutura do Projeto
 
-To clone and run this application, you'll need [Git](https://git-scm.com), [Node.js v20+](https://nodejs.org/en/) + [NPM v10+](https://nodejs.org/en/) installed on your computer. From your command line:
-
-```bash
-# Clone this repository
-$ git clone https://github.com/felipeAguiarCode/node-blue-boilerplate
-
-# Go into the repository
-$ cd node-blue-boilerplate
-
-# Install dependencies
-$ npm install
+```plaintext
+├── src
+│   ├── server.ts        # Arquivo principal do servidor
+│   └── (outros arquivos .ts e .env)
+├── .env                 # Variáveis de ambiente
+├── package.json         # Dependências e scripts do projeto
+└── tsconfig.json        # Configurações do TypeScript
 ```
 
-## Author
+## Contribuição
 
-| [<img src="https://avatars3.githubusercontent.com/u/37452836?s=96&v=4"><br><sub>Felipe Aguiar</sub>](https://github.com/felipeAguiarCode) |
-| :---------------------------------------------------------------------------------------------------------------------------------------: |
-|                                            [Linkedin](www.linkedin.com/in/felipe-aguiar-exe/)                                             |
+Contribuições são bem-vindas! Sinta-se à vontade para abrir issues e pull requests.
 
-# Credits
+## Licença
 
-icons by [Pino Lamanna][dribble-icon]
+Este projeto está licenciado sob a licença ISC. Consulte o arquivo LICENSE para mais detalhes.
 
-[typescript]: https://www.typescriptlang.org/
-[typescript-5-4]: https://www.typescriptlang.org/
-[ts-badge]: https://img.shields.io/badge/TypeScript-5.4-blue.svg
-[nodejs-badge]: https://img.shields.io/badge/Node.js->=%2020.00-blue.svg
-[nodejs]: https://nodejs.org/
-[dribble-icon]: https://dribbble.com/Schakalwal
-[typescript-npm]: https://www.npmjs.com/package/typescript
-[tsx-npm]: https://www.npmjs.com/package/tsx
-[tsup-npm]: https://www.npmjs.com/package/tsup
-[@types/node-npm]: https://www.npmjs.com/package/@types/node
+## Contato
+
+Para mais informações, entre em contato com:
+<br />
+Email: [Leonardo Bernardo](mailto:leonardo.bernardo2658@gmail.com).
+LinkedIn: [Leonardobern](https://www.linkedin.com/in/leonardo-bern/).
